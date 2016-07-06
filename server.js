@@ -33,7 +33,7 @@ app.get("/pickacolor/:color", function (req, res) {
     res.send("You picked " + color + "!");
 });
 
-//Question 4 - burgers and tacos
+//Question 2 - burgers and tacos
 app.get("/burger/:index", function(req, res){
   var index = req.params.index;
   var burgerType = burgers[index] || "That burger isn't listed.";
